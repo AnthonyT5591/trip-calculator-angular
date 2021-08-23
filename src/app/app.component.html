@@ -2,6 +2,7 @@
   <div *ngFor="let cost of passCosts">
     <display-costs (updateCostEvent)="updateCost($event)" [costs]="cost"></display-costs>
   </div>
-
-  <shared-costs [costs]="passCosts"></shared-costs>
+  <div>
+    <shared-costs [costs]="passCosts"></shared-costs>
+  </div>
 </div>
