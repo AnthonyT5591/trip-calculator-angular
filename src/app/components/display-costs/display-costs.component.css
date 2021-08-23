@@ -1,0 +1,24 @@
+.display-container {
+    display: flex;
+    max-height: 200px;
+}
+
+.cost-list {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.submit-container{
+    padding: 20px;
+}
+
+.title-container {
+    padding: 20px;
+}
+
+.cost-text {
+    padding: 3px;
+}

@@ -1,0 +1,12 @@
+.costs-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.is-invalid {
+    color: #a94442;
+}
+
+.mat-form-field-wrapper {
+    padding-bottom: 0;
+}

@@ -1,0 +1,15 @@
+<div class="display-container">
+    <div class="submit-container">
+        <h2>{{costs.name}}</h2>
+        <add-costs-form (addCostEvent)="addCost($event)"></add-costs-form>
+    </div>
+    <br />
+    <div class="title-container">
+        <h4 style="text-decoration: underline;">Costs for {{costs.name}}</h4>
+        <p><span style="font-weight: bold;">Total:</span> {{costs.total | currency}}</p>
+    </div>
+    <div class="cost-list">
+        <p class="cost-text" *ngFor="let item of costs.paidCosts">{{item | currency}}</p>
+    </div>
+    <br />
+</div>

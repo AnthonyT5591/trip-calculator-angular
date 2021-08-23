@@ -1,0 +1,12 @@
+<h2>Shared Costs</h2>
+
+<p>All Costs Total: {{allCostsTotal.toFixed(2)}}</p>
+
+<p>Total Split between people ({{costs.length}}): {{sharedCostsTotal.toFixed(2)}}</p>
+
+
+<div *ngFor="let diffItem of diff">
+    <p *ngIf="diffItem.difference > 0">{{diffItem.name}} owes {{determinePayTo()}} the amount of
+        {{diffItem.difference.toFixed(2) | currency}}</p>
+    <p *ngIf="diffItem.difference < 0">{{diffItem.name}} is owed a total of {{diffItem.difference.toFixed(2) * - 1 | currency}}</p>
+</div>
