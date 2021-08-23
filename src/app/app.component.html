@@ -1,6 +1,7 @@
 <div class="container">
   <div *ngFor="let cost of passCosts">
     <display-costs (updateCostEvent)="updateCost($event)" [costs]="cost"></display-costs>
+    <mat-divider></mat-divider>
   </div>
   <div>
     <shared-costs [costs]="passCosts"></shared-costs>

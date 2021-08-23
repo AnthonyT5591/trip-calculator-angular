@@ -29,5 +29,6 @@ export class AddCostsFormComponent implements OnInit {
   }
   onSubmit() {
     this.addCostEvent.emit(this.cost);
+    this.cost = null;
   }
 }

@@ -2,6 +2,9 @@
 
 This project is a Trip Calculator.  Used to determine shared costs of a trip between people.  Currently locked to 3 people with distinct names.  Add costs and see the updated valued at the bottom of the screen.
 
+Costs get display different colors based on amount. 
+Break points are $100 and $1000.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.

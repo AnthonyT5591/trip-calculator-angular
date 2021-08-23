@@ -1,6 +1,5 @@
 .display-container {
     display: flex;
-    max-height: 200px;
 }
 
 .cost-list {

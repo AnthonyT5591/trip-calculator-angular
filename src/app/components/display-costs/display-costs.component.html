@@ -5,11 +5,13 @@
     </div>
     <br />
     <div class="title-container">
-        <h4 style="text-decoration: underline;">Costs for {{costs.name}}</h4>
         <p><span style="font-weight: bold;">Total:</span> {{costs.total | currency}}</p>
     </div>
     <div class="cost-list">
-        <p class="cost-text" *ngFor="let item of costs.paidCosts">{{item | currency}}</p>
+        <mat-chip-list>
+            <mat-chip selected [color]="(item < 100) ? 'primary': ((item < 1000) ? 'accent' : 'warn')" class="cost-text"
+                *ngFor="let item of costs.paidCosts">{{item | currency}}</mat-chip>
+        </mat-chip-list>
     </div>
     <br />
 </div>
